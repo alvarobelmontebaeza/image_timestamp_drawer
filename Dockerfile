@@ -1,7 +1,7 @@
 # parameters
-ARG REPO_NAME="<REPO_NAME_HERE>"
-ARG DESCRIPTION="<DESCRIPTION_HERE>"
-ARG MAINTAINER="<YOUR_FULL_NAME> (<YOUR_EMAIL_ADDRESS>)"
+ARG REPO_NAME="image_timestamp_drawer"
+ARG DESCRIPTION="Duckietown compliant package that reads some bagfile with an image topic recorded and writes another bagfile with a timestamp draw in the same image "
+ARG MAINTAINER="Alvaro Belmonte Baeza (alvaro.bb.7@gmail.com)"
 # pick an icon from: https://fontawesome.com/v4.7.0/icons/
 ARG ICON="cube"
 
