@@ -16,7 +16,8 @@ if __name__ == '__main__':
     # Read recorded values from the camera image topic
     for topic, msg, t in bag_read.read_messages(topics=['/sora/camera_node/image/compressed']):
         # Extract information
-        image = np.fromstring(msg, np.uint8)
+        image_raw = np.fromstring(msg.data, np.uint8)
+        image = cv2.imdecode(image_raw, cv2.CV_LOAD_IMAGE_COLOR)
         timestamp = t.to_sec()
 
         # Add timestamp to the image
